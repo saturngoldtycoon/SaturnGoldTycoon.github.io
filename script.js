@@ -1,21 +1,31 @@
-// ==================================================== 
-// NEW CODE: CALCULATOR SCRIPT APPENDED AT THE BOTTOM
-// ==================================================== 
+// Wait until the browser completely maps the layout structure
+window.addEventListener('DOMContentLoaded', () => {
 
-// 1. Grab our calculator elements from the page
-var osSelect = document.getElementById('os');
-var issueSelect = document.getElementById('issue');
-var totalDisplay = document.getElementById('total-price');
+    // 1. Core Interactive Elements
+    var myButton = document.getElementById('action-btn');
+    var myMessage = document.getElementById('message');
 
-// 2. Run the mathematical addition
-function updateEstimate() {
-    var baseCost = Number(osSelect.value);
-    var addedCost = Number(issueSelect.value);
-    var finalPrice = baseCost + addedCost;
-    
-    totalDisplay.innerText = "$" + finalPrice;
-}
+    // 2. Calculator Selectors
+    var osSelect = document.getElementById('os');
+    var issueSelect = document.getElementById('issue');
+    var totalDisplay = document.getElementById('total-price');
 
-// 3. Watch for changes on the dropdown menus
-osSelect.addEventListener('change', updateEstimate);
-issueSelect.addEventListener('change', updateEstimate);
+    // 3. Simple Button Status Message Function
+    myButton.addEventListener('click', function() {
+        myMessage.innerText = "Opening Stream Connection ⚡";
+    });
+
+    // 4. Mathematical Addition Logic Function
+    function updateEstimate() {
+        var baseCost = Number(osSelect.value);
+        var addedCost = Number(issueSelect.value);
+        var finalPrice = baseCost + addedCost;
+        
+        totalDisplay.innerText = "$" + finalPrice;
+    }
+
+    // 5. Explicitly watch the selectors for real-time interactions
+    osSelect.addEventListener('change', updateEstimate);
+    issueSelect.addEventListener('change', updateEstimate);
+
+});
