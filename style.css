@@ -1,74 +1,53 @@
-/* Deep Space Background */
-body {
+/* ==================================================== */
+/* NEW CODE: ADDED AT THE BOTTOM TO STYLE THE ESTIMATOR */
+/* ==================================================== */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #45a29e;
+    margin-bottom: 8px;
+    letter-spacing: 0.03em;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 12px;
     background-color: #0b0c10;
-    color: #f5f5f5;
-    font-family: system-ui, -apple-system, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px;
+    border: 1px solid #45a29e;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
     box-sizing: border-box;
 }
 
-/* Custom Themed Component Panel */
-.card {
-    background-color: #1f2833;
+.price-box {
+    background-color: #0b0c10;
     border: 1px solid #45a29e;
-    border-top: 4px solid #c5a059; /* Custom Tycoon Gold Accent */
-    padding: 35px;
+    padding: 15px;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
-    width: 100%;
-    max-width: 360px;
-}
-
-h1 {
-    margin-top: 0;
-    font-size: 26px;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.02em;
-}
-
-p {
-    color: #c5a059; /* Matching Text Accent */
-    font-size: 14px;
-    margin-bottom: 25px;
-    font-weight: 600;
-}
-
-/* High-Contrast Interactive Button */
-button {
-    background-color: #c5a059;
-    color: #0b0c10;
-    border: none;
-    padding: 14px 28px;
-    font-size: 15px;
-    font-weight: 700;
     border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    box-shadow: 0 4px 12px rgba(197, 160, 89, 0.2);
-    transition: background-color 0.1s;
-}
-
-button:hover {
-    background-color: #dcb873;
-}
-
-button:active {
-    transform: scale(0.99);
-}
-
-/* Status Text Display Output */
-#message {
     margin-top: 25px;
-    color: #45a29e; /* Teal Highlight */
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.08em;
+}
+
+.price-title {
+    font-size: 11px;
     text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c5a059;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+#total-price {
+    color: #ffffff;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
 }
