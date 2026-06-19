@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saturn Gold Tycoon</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body style="background-color: #d4af37; padding; 20px;">
-    <h1>Hello World!</h1>
-    <p>We're Live... more on the way!</p>
+    <title>SGT-Tech Hub</title>
+</head>
+<body style="background-color: #121212; color: white; font-family: sans-serif; padding: 20px;">
+
+    <div style="border: 3px solid #f7df1e; padding: 20px; max-width: 400px; margin: auto; background-color: #1e1e1e; border-radius: 10px;">
+        
+        <h2 style="color: #f7df1e; text-align: center;">⚙️ SGT-Tech Calculator</h2>
+        
+        <p>Select Operating System:</p>
+        <select id="os">
+            <option value="50">Windows 10/11 ($50)</option>
+            <option value="65">macOS ($65)</option>
+            <option value="80">Linux ($80)</option>
+        </select>
+
+        <p>Select Issue Severity:</p>
+        <select id="issue">
+            <option value="0">Simple Boot Loop Repair (+$0)</option>
+            <option value="25">Corrupted System File Rebuild (+$25)</option>
+            <option value="60">Full OS Reinstall (+$60)</option>
+        </select>
+
+        <div style="background-color: #2d2d2d; margin-top: 20px; padding: 10px; text-align: center; border-radius: 5px;">
+            <h3 id="total-price" style="color: #f7df1e; margin: 0;">Estimated Cost: $50</h3>
+        </div>
+
+    </div>
+
+    <!-- This links your HTML directly to your script.js file -->
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
