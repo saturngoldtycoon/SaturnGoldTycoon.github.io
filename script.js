@@ -4,5 +4,5 @@ var myMessage = document.getElementById('message');
 
 // Run this simple text update when clicked
 myButton.addEventListener('click', function() {
-    myMessage.innerText = "System Online ⚡";
+    myMessage.innerText = "Entering Orbit ⚡";
 });
