@@ -1,16 +1,8 @@
-window.addEventListener('DOMContentLoaded', () => {
-    var osSelect = document.getElementById('os');
-    var issueSelect = document.getElementById('issue');
-    var totalDisplay = document.getElementById('total-price');
+// Grab the button and the empty message paragraph
+var myButton = document.getElementById('action-btn');
+var myMessage = document.getElementById('message');
 
-    function updateEstimate() {
-        var baseCost = Number(osSelect.value);
-        var addedCost = Number(issueSelect.value);
-        var finalPrice = baseCost + addedCost;
-        
-        totalDisplay.innerText = "$" + finalPrice;
-    }
-
-    osSelect.addEventListener('change', updateEstimate);
-    issueSelect.addEventListener('change', updateEstimate);
+// Run this simple text update when clicked
+myButton.addEventListener('click', function() {
+    myMessage.innerText = "System Online ⚡";
 });
