@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGT-Tech Hub</title>
-    <!-- Link to CSS file -->
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,11 +12,43 @@
     <div class="card">
         <h1>Hello World</h1>
         <p>Welcome to SGT-Tech.</p>
-        <button id="action-btn" onclick="window.open('https://twitch.tv/saturngoldtycoon', '_blank')">Visit Twitch Stream</button>
+        <button id="action-btn">Click Me</button>
         <p id="message"></p>
+
+        <!-- ==================================================== -->
+        <!-- NEW CODE: CALCULATOR INSERTED HERE WITHOUT BREAKING MAIN CODE -->
+        <!-- ==================================================== -->
+        <hr style="border: 0; border-top: 1px solid #45a29e; margin: 30px 0;">
+        
+        <h2 style="color: #ffffff; font-size: 20px; margin-bottom: 20px;">⚙️ Service Estimator</h2>
+        
+        <div class="form-group">
+            <label for="os">Target Operating System</label>
+            <select id="os">
+                <option value="50">Windows 10 / 11 ($50)</option>
+                <option value="65">macOS ($65)</option>
+                <option value="80">Linux / Server OS ($80)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="issue">Required Recovery Severity</label>
+            <select id="issue">
+                <option value="0">Simple Boot Loop Repair (+$0)</option>
+                <option value="25">Corrupted File Rebuild (+$25)</option>
+                <option value="60">Full OS Reinstall + Backup (+$60)</option>
+            </select>
+        </div>
+
+        <div class="price-box">
+            <div class="price-title">Total Estimate</div>
+            <h3 id="total-price">$50</h3>
+        </div>
+        <!-- ==================================================== -->
+
     </div>
 
-    <!-- Link to JavaScript file -->
+    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
