@@ -1,1 +1,49 @@
+/* Dark tech theme background */
+body {
+    background-color: #0b0f19;
+    color: #ffffff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
+/* Sleek container box */
+.card {
+    background-color: #111827;
+    border: 2px solid #1f2937;
+    border-top: 4px solid #3b82f6;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+/* Styled interactive button */
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Simple text message styling */
+#message {
+    margin-top: 20px;
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 18px;
+}
