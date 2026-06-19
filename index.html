@@ -2,36 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SGT-Tech Hub</title>
 </head>
-<body style="background-color: #121212; color: white; font-family: sans-serif; padding: 20px;">
+<body style="background-color: #0b0f19; color: #f3f4f6; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
 
-    <div style="border: 3px solid #f7df1e; padding: 20px; max-width: 400px; margin: auto; background-color: #1e1e1e; border-radius: 10px;">
+    <div style="background-color: #111827; border: 1px solid #1f2937; border-top: 4px solid #3b82f6; padding: 30px; width: 100%; max-width: 420px; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);">
         
-        <h2 style="color: #f7df1e; text-align: center;">⚙️ SGT-Tech Calculator</h2>
+        <h2 style="color: #ffffff; text-align: center; margin-top: 0; margin-bottom: 25px; font-size: 24px; font-weight: 700;">⚙️ SGT-Tech Service Estimator</h2>
         
-        <p>Select Operating System:</p>
-        <select id="os">
-            <option value="50">Windows 10/11 ($50)</option>
-            <option value="65">macOS ($65)</option>
-            <option value="80">Linux ($80)</option>
-        </select>
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; font-size: 14px; font-weight: 500; color: #9ca3af; margin-bottom: 8px;">Target Operating System</label>
+            <select id="os" style="width: 100%; padding: 12px; background-color: #1f2937; border: 1px solid #374151; border-radius: 8px; color: #ffffff; font-size: 15px; outline: none;">
+                <option value="50">Windows 10 / 11 ($50)</option>
+                <option value="65">macOS ($65)</option>
+                <option value="80">Linux / Server OS ($80)</option>
+            </select>
+        </div>
 
-        <p>Select Issue Severity:</p>
-        <select id="issue">
-            <option value="0">Simple Boot Loop Repair (+$0)</option>
-            <option value="25">Corrupted System File Rebuild (+$25)</option>
-            <option value="60">Full OS Reinstall (+$60)</option>
-        </select>
+        <div style="margin-bottom: 25px;">
+            <label style="display: block; font-size: 14px; font-weight: 500; color: #9ca3af; margin-bottom: 8px;">Required Recovery Severity</label>
+            <select id="issue" style="width: 100%; padding: 12px; background-color: #1f2937; border: 1px solid #374151; border-radius: 8px; color: #ffffff; font-size: 15px; outline: none;">
+                <option value="0">Simple Boot Loop Repair (+$0)</option>
+                <option value="25">Corrupted File Rebuild (+$25)</option>
+                <option value="60">Full OS Reinstall + Backup (+$60)</option>
+            </select>
+        </div>
 
-        <div style="background-color: #2d2d2d; margin-top: 20px; padding: 10px; text-align: center; border-radius: 5px;">
-            <h3 id="total-price" style="color: #f7df1e; margin: 0;">Estimated Cost: $50</h3>
+        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border: 1px solid #334155; padding: 20px; text-align: center; border-radius: 8px; margin-top: 10px;">
+            <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #3b82f6; font-weight: 600; margin-bottom: 4px;">Total Estimate</div>
+            <h3 id="total-price" style="color: #ffffff; margin: 0; font-size: 32px; font-weight: 700;">$50</h3>
         </div>
 
     </div>
 
-    <!-- This links your HTML directly to your script.js file -->
     <script src="script.js"></script>
-
 </body>
 </html>
