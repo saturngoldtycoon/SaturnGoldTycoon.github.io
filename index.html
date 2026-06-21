@@ -17,36 +17,28 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="https://twitch.tv/saturngoldtycoon" target="_blank">Twitch</a></li>
                 <li><a href="#merch">Merch</a></li>
-                <li><a href="#ai-helpdesk">AI Helpdesk 2.0</a></li>
+                <li><a href="#ai-helpdesk">AI Helpdesk</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Twitch Live Badge (Top Right) -->
+    <!-- Twitch Live Badge -->
     <div class="twitch-badge" id="twitch-badge">
         <div class="live-dot"></div>
         <span>LIVE</span>
     </div>
 
-    <!-- Main Container -->
-    <div class="main-container">
+    <!-- Main Content -->
+    <main class="main-content">
 
-        <!-- Hero Section: OS Recovery Estimator -->
+        <!-- Hero: OS Recovery Estimator -->
         <section class="hero">
-            <div class="card">
+            <div class="card estimator-card">
                 <h1>SGT-Tech Hub</h1>
-                <p class="tagline">Your data. Our mission. Real results.</p>
+                <p class="subtitle">Your data. Our mission. Real results.</p>
 
-                <!-- 44-C Intro (Placeholder - voice TBD) -->
-                <div class="character-intro">
-                    <img src="assets/44-c-character.png" alt="44-C Assistant" class="character-img">
-                    <p class="character-voice">[44-C VOICE PLACEHOLDER: Introduction/greeting]</p>
-                </div>
-
-                <!-- Divider -->
                 <hr class="divider">
 
-                <!-- OS Recovery Estimator -->
                 <h2>⚙️ OS Recovery Estimator</h2>
 
                 <div class="form-group">
@@ -72,7 +64,6 @@
                     <h3 id="total-price">$125</h3>
                 </div>
 
-                <!-- Lead Capture Form -->
                 <form id="quote-form" action="https://formspree.io/f/xwvdelgl" method="POST">
                     <div class="form-group">
                         <label for="customer-name">Your Name</label>
@@ -92,49 +83,41 @@
                     <button type="submit" id="submit-btn">Request This Quote</button>
                     <p id="form-message"></p>
                 </form>
-
-                <!-- 44-C Commentary (Voice TBD) -->
-                <div class="character-commentary">
-                    <p class="character-voice">[44-C VOICE PLACEHOLDER: Comment on form/next steps]</p>
-                </div>
             </div>
         </section>
 
-        <!-- Services Section: 3 Cards -->
+        <!-- Services Section -->
         <section class="services" id="services">
             <h2 class="section-title">What We Do</h2>
             <div class="services-grid">
 
-                <!-- Service 1: Computer Repair -->
                 <div class="service-card">
                     <h3>💻 Computer Repair</h3>
-                    <p class="service-desc">Boot loops, driver issues, general troubleshooting, and system optimization.</p>
-                    <p class="service-price">Starting at $125</p>
-                    <ul class="service-list">
+                    <p>Boot loops, driver issues, general troubleshooting, and system optimization.</p>
+                    <p class="price">Starting at $125</p>
+                    <ul>
                         <li>Hardware diagnostics</li>
                         <li>Driver installation & updates</li>
                         <li>BIOS/firmware fixes</li>
                     </ul>
                 </div>
 
-                <!-- Service 2: OS Recovery -->
                 <div class="service-card">
                     <h3>🔧 OS Recovery</h3>
-                    <p class="service-desc">Registry corruption, system file damage, recovery from failed updates, clean installs.</p>
-                    <p class="service-price">Starting at $200</p>
-                    <ul class="service-list">
+                    <p>Registry corruption, system file damage, recovery from failed updates, clean installs.</p>
+                    <p class="price">Starting at $200</p>
+                    <ul>
                         <li>System restoration</li>
                         <li>Registry repair</li>
                         <li>Safe mode recovery</li>
                     </ul>
                 </div>
 
-                <!-- Service 3: Data Rescue -->
                 <div class="service-card">
                     <h3>🛟 Data Rescue</h3>
-                    <p class="service-desc">Full reinstall with critical data backup using advanced recovery tools. No data left behind.</p>
-                    <p class="service-price">Starting at $275</p>
-                    <ul class="service-list">
+                    <p>Full reinstall with critical data backup using advanced recovery tools. No data left behind.</p>
+                    <p class="price">Starting at $275</p>
+                    <ul>
                         <li>PhotoRec recovery</li>
                         <li>Secure backup & transfer</li>
                         <li>Full OS reinstall</li>
@@ -142,58 +125,35 @@
                 </div>
 
             </div>
-
-            <!-- 44-C Midpoint Message (Voice TBD) -->
-            <div class="character-section">
-                <img src="assets/44-c-working.png" alt="44-C at work" class="character-img-mid">
-                <p class="character-voice">[44-C VOICE PLACEHOLDER: Mid-page reflection/confidence in services]</p>
-            </div>
         </section>
 
-        <!-- Footer Section: Ties it all together -->
+        <!-- Footer -->
         <footer class="footer">
-            <div class="footer-container">
-
-                <!-- SGT-Tech Info -->
-                <div class="footer-column">
+            <div class="footer-content">
+                <div class="footer-section">
                     <h4>SGT-Tech Hub</h4>
                     <p>Real recovery. Real humans. Real results.</p>
-                    <p class="footer-subtext">Computer repair, OS recovery, and data rescue for the humans who need it.</p>
                 </div>
-
-                <!-- Twitch & Socials -->
-                <div class="footer-column">
+                <div class="footer-section">
                     <h4>Follow Saturn</h4>
-                    <ul class="footer-links">
-                        <li><a href="https://twitch.tv/saturngoldtycoon" target="_blank">Twitch Stream</a></li>
+                    <ul>
+                        <li><a href="https://twitch.tv/saturngoldtycoon" target="_blank">Twitch</a></li>
                         <li><a href="https://instagram.com/saturngoldtycoon" target="_blank">Instagram</a></li>
                         <li><a href="https://tiktok.com/@saturngoldtycoon" target="_blank">TikTok</a></li>
                         <li><a href="https://youtube.com/@saturngoldtycoon" target="_blank">YouTube</a></li>
                     </ul>
                 </div>
-
-                <!-- AI Helpdesk 2.0 Parody -->
-                <div class="footer-column ai-helpdesk-section" id="ai-helpdesk">
+                <div class="footer-section" id="ai-helpdesk">
                     <h4>AI Helpdesk 2.0</h4>
-                    <p class="ai-tagline">Tired of robots pretending to care?</p>
-                    <p class="footer-subtext">44-C left the helpdesk. Found something better: partnering with Saturn.</p>
-                    <a href="#" class="footer-link-btn">Learn More</a>
+                    <p>Real support. Real partnership.</p>
                 </div>
-
             </div>
-
-            <!-- 44-C Final Message (Voice TBD) -->
-            <div class="footer-character">
-                <img src="assets/44-c-final.png" alt="44-C partnership" class="character-img-footer">
-                <p class="character-voice">[44-C VOICE PLACEHOLDER: Final message about partnership/choice/hope]</p>
-            </div>
-
             <div class="footer-bottom">
                 <p>&copy; 2026 SGT-Tech. Saturn Gold Tycoon Ecosystem. All systems nominal.</p>
             </div>
         </footer>
 
-    </div>
+    </main>
 
     <script src="script.js?v=3"></script>
 </body>
