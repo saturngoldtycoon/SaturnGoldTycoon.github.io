@@ -42,10 +42,24 @@
             </select>
         </div>
 
-        <div class="price-box">
-            <div class="price-title">Total Estimated Cost</div>
-            <h3 id="total-price">$125</h3>
-        </div>
+<!-- Lead Capture Form -->
+<form id="quote-form">
+    <div class="form-group">
+        <label for="customer-name">Your Name</label>
+        <input type="text" id="customer-name" required>
+    </div>
+    <div class="form-group">
+        <label for="customer-email">Your Email</label>
+        <input type="email" id="customer-email" required>
+    </div>
+    <div class="form-group">
+        <label for="customer-notes">Anything else we should know?</label>
+        <textarea id="customer-notes" rows="3"></textarea>
+    </div>
+    <button type="submit" id="submit-btn">Request This Quote</button>
+    <p id="form-message"></p>
+</form>
+
 
     </div>
 
