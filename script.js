@@ -1,19 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // 1. Core Interactive Elements
-    var myButton = document.getElementById('action-btn');
-    var myMessage = document.getElementById('message');
-
-    // 2. Calculator Selectors
+    // Selectors
     var osSelect = document.getElementById('os');
     var issueSelect = document.getElementById('issue');
     var totalDisplay = document.getElementById('total-price');
+    var quoteForm = document.getElementById('quote-form');
 
-    // 3. Simple Button Status Message Function
-    myButton.addEventListener('click', function() {
-        myMessage.innerText = "Opening Stream Connection...";
-    });
-
-    // 4. Mathematical Addition Logic Function
+    // Calculate and display price
     function updateEstimate() {
         var baseCost = Number(osSelect.value);
         var addedCost = Number(issueSelect.value);
@@ -21,14 +13,17 @@ window.addEventListener('DOMContentLoaded', () => {
         totalDisplay.innerText = "$" + finalPrice;
     }
 
-    // 5. Explicitly watch the selectors for real-time updates
+    // Update on select changes
     osSelect.addEventListener('change', updateEstimate);
     issueSelect.addEventListener('change', updateEstimate);
 
-    // 6. Fill hidden fields with quote details right before submit
-    document.getElementById('quote-form').addEventListener('submit', function() {
+    // Fill hidden fields before form submission
+    quoteForm.addEventListener('submit', function() {
         document.getElementById('hidden-os').value = osSelect.selectedOptions[0].text;
         document.getElementById('hidden-issue').value = issueSelect.selectedOptions[0].text;
         document.getElementById('hidden-total').value = totalDisplay.innerText;
     });
+
+    // Initialize price on page load
+    updateEstimate();
 });
