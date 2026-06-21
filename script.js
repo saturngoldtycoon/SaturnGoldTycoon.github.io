@@ -26,6 +26,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // 5. Explicitly watch the selectors for real-time interactions
     osSelect.addEventListener('change', updateEstimate);
+    
+document.getElementById('quote-form').addEventListener('submit', function() {
+    document.getElementById('hidden-os').value = osSelect.selectedOptions[0].text;
+    document.getElementById('hidden-issue').value = issueSelect.selectedOptions[0].text;
+    document.getElementById('hidden-total').value = totalDisplay.innerText;
+});
+
     issueSelect.addEventListener('change', updateEstimate);
 
 });
