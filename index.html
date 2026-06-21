@@ -46,15 +46,15 @@
 <form id="quote-form" action="https://formspree.io/f/xwvdelgl" method="POST">
     <div class="form-group">
         <label for="customer-name">Your Name</label>
-        <input type="text" id="customer-name" required>
+        <input type="text" id="customer-name" name="name" required>
     </div>
     <div class="form-group">
         <label for="customer-email">Your Email</label>
-        <input type="email" id="customer-email" required>
+        <input type="email" id="customer-email" name="email" required>
     </div>
     <div class="form-group">
         <label for="customer-notes">Anything else we should know?</label>
-        <textarea id="customer-notes" rows="3"></textarea>
+        <textarea id="customer-notes" name="notes" rows="3"></textarea>
     </div>
     <input type="hidden" id="hidden-os" name="Operating System">
     <input type="hidden" id="hidden-issue" name="Recovery Type">
