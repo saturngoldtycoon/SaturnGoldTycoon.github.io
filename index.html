@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SGT-Tech Hub | OS Recovery & Data Rescue</title>
+<title>SGT-Tech Hub | Computer Repair, Network Support & Data Recovery</title>
 <link href="https://googleapis.com" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -15,6 +15,7 @@
     <div class="nav-logo">SGT-TECH</div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="#book">Book Now</a></li>
       <li><a href="#merch">Merch</a></li>
     </ul>
   </div>
@@ -27,30 +28,33 @@
   <section class="hero">
     <div class="card estimator-card">
       <h1>SGT-Tech Hub</h1>
-      <p class="subtitle">Your data. Our mission. Real results.</p>
-      <p class="service-area">📍 Serving Northeast Ohio — 25 mile radius in-person · Remote support available nationwide</p>
+      <p class="subtitle">Connection. People. Technology.</p>
+      <p class="service-area">📍 Serving Cleveland & Northeast Ohio — 50 mile radius, in-person only</p>
+
+      <!-- Direct Contact Bar -->
+      <div class="contact-bar">
+        <a href="tel:+17327488324" class="contact-btn call-btn">📞 Call 732-SGT-TECH</a>
+        <a href="sms:+17327488324" class="contact-btn text-btn">💬 Text Us</a>
+      </div>
+
       <hr class="divider">
-      <h2>⚙️ OS Recovery Estimator</h2>
+      <h2>⚙️ Repair Cost Estimator</h2>
       <div class="form-group">
-        <label for="os">Target Operating System</label>
-        <select id="os">
-          <option value="125">Windows 10 / 11 ($125 Base)</option>
-          <option value="160">macOS Apple ($160 Base)</option>
-          <option value="195">Linux / Server OS ($195 Base)</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="issue">Required Recovery Severity</label>
+        <label for="issue">What's wrong with your device?</label>
         <select id="issue">
-          <option value="0">Simple Boot Loop Repair (+$0)</option>
-          <option value="75">Corrupted Registry / File Rebuild (+$75)</option>
-          <option value="150">Full Reinstall + Critical Data Backup (+$150)</option>
+          <option value="50">Full Diagnostic Only ($50)</option>
+          <option value="60">Computer Not Turning On ($60)</option>
+          <option value="60">Slow Computer Performance ($60)</option>
+          <option value="65">System Error / Blue Screen ($65)</option>
+          <option value="75">Virus or Malware ($75)</option>
         </select>
       </div>
+      <p class="field-hint flat-fee-note">+$25 flat travel fee included on every visit</p>
       <div class="price-box">
         <div class="price-title">Total Estimated Cost</div>
-        <h3 id="total-price">$125</h3>
+        <h3 id="total-price">$75</h3>
       </div>
+      <p class="discount-disclaimer">🎖️ Senior & Veteran discounts available with valid ID/verification.</p>
       <form id="quote-form" action="https://formspree.io/f/xwvdelgl" method="POST">
         <div class="form-group">
           <label for="customer-name">Your Name</label>
@@ -64,12 +68,22 @@
           <label for="customer-notes">Describe the issue (optional)</label>
           <textarea id="customer-notes" name="notes" rows="3"></textarea>
         </div>
-        <input type="hidden" id="hidden-os" name="os">
         <input type="hidden" id="hidden-issue" name="issue">
         <input type="hidden" id="hidden-total" name="total">
         <button type="submit" id="submit-btn">Request This Quote</button>
         <p id="form-message"></p>
       </form>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section class="booking" id="book">
+    <h2 class="section-title">Schedule Your Appointment</h2>
+    <p class="section-subtitle">Pick a time that works for you — it goes straight to my calendar and I'll get an email + confirmation instantly.</p>
+    <div class="card booking-card">
+      <!-- Calendly inline widget begin -->
+      <div class="calendly-inline-widget" data-url="https://calendly.com/ronoldyoung/30min?background_color=1f2833&text_color=f5f5f5&primary_color=d4af37" style="min-width:280px;height:700px;"></div>
+      <!-- Calendly inline widget end -->
     </div>
   </section>
 
@@ -81,22 +95,47 @@
       <div class="service-card">
         <h3>💻 Computer Repair</h3>
         <p>Boot loops, driver issues, general troubleshooting, and system optimization.</p>
-        <p class="price">Starting at $125</p>
+        <p class="price">Starting at $75</p>
         <ul>
-          <li>Hardware diagnostics</li>
-          <li>Driver installation & updates</li>
-          <li>BIOS/firmware fixes</li>
+          <li>Full diagnostic only — $50</li>
+          <li>Computer not turning on — $60</li>
+          <li>Slow performance — $60</li>
+          <li>System error / blue screen — $65</li>
+          <li>Virus or malware — $75</li>
+          <li>+$25 flat travel fee on every visit</li>
         </ul>
       </div>
 
       <div class="service-card">
-        <h3>🔧 OS Recovery</h3>
-        <p>Registry corruption, system file damage, recovery from failed updates, clean installs.</p>
-        <p class="price">Starting at $200</p>
+        <h3>🌐 Network Support</h3>
+        <p>Router setup, WiFi troubleshooting, home or small office network configuration.</p>
+        <p class="price">$70/hour</p>
         <ul>
-          <li>System restoration</li>
-          <li>Registry repair</li>
-          <li>Safe mode recovery</li>
+          <li>WiFi & router setup</li>
+          <li>Network troubleshooting</li>
+          <li>Small office configuration</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>🎓 Computer Lessons</h3>
+        <p>One-on-one, patient, jargon-free tech lessons at your pace.</p>
+        <p class="price">$35/hour</p>
+        <ul>
+          <li>Beginner-friendly instruction</li>
+          <li>Software & app walkthroughs</li>
+          <li>Accessibility tool training</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>🦠 Virus Removal Services</h3>
+        <p>Full malware and virus sweep for businesses or multi-device households.</p>
+        <p class="price">$75/device</p>
+        <ul>
+          <li>Full malware scan & removal</li>
+          <li>Security hardening</li>
+          <li>Per-device pricing for multiple machines</li>
         </ul>
       </div>
 
@@ -108,17 +147,6 @@
           <li>PhotoRec recovery</li>
           <li>Secure backup & transfer</li>
           <li>Full OS reinstall</li>
-        </ul>
-      </div>
-
-      <div class="service-card">
-        <h3>🌐 Remote Support</h3>
-        <p>Can't come to us? We connect directly to your machine and fix it in real time. Nationwide.</p>
-        <p class="price">Starting at $35</p>
-        <ul>
-          <li>Remote diagnosis — $35</li>
-          <li>Virus & malware removal — $65</li>
-          <li>OS guidance & repair — $95</li>
         </ul>
       </div>
 
@@ -143,7 +171,9 @@
       <div class="footer-section">
         <h4>SGT-Tech Hub</h4>
         <p>Real recovery. Real humans. Real results.</p>
-        <p>📍 Northeast Ohio · Remote Nationwide</p>
+        <p>📍 Cleveland & Northeast Ohio · 50 mile radius</p>
+        <p class="footer-disclaimer">🎖️ Senior & Veteran discounts available with valid ID/verification.</p>
+        <p>📞 <a href="tel:+17327488324">732-SGT-TECH</a></p>
       </div>
       <div class="footer-section">
         <h4>Follow Saturn</h4>
@@ -161,6 +191,8 @@
 
 </main>
 
-<script src="script.js?v=3"></script>
+<!-- Calendly widget script -->
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>
