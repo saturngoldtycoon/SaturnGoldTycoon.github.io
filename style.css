@@ -137,6 +137,44 @@ body {
     text-align: left;
 }
 
+/* ===== CONTACT BAR (Call / Text) ===== */
+.contact-bar {
+    display: flex;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.contact-btn {
+    flex: 1;
+    text-align: center;
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    transition: all 0.2s;
+    border: 1px solid #d4af37;
+}
+
+.call-btn {
+    background-color: #d4af37;
+    color: #0b0c10;
+}
+
+.call-btn:hover {
+    background-color: #dcb873;
+}
+
+.text-btn {
+    background-color: transparent;
+    color: #d4af37;
+}
+
+.text-btn:hover {
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
 /* ===== FORM ELEMENTS ===== */
 .form-group {
     margin-bottom: 20px;
@@ -175,6 +213,59 @@ body {
 .form-group textarea {
     resize: vertical;
     font-family: inherit;
+}
+
+/* ===== CHECKBOX GROUP (Travel Fee) ===== */
+.checkbox-group {
+    background-color: #0b0c10;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    padding: 14px;
+}
+
+.checkbox-label {
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 !important;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #d4af37;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.field-hint {
+    font-size: 11px;
+    color: #c5a059;
+    margin: 8px 0 0 28px;
+    opacity: 0.85;
+}
+
+.flat-fee-note {
+    margin: -10px 0 20px 0 !important;
+    text-align: center;
+}
+
+.discount-disclaimer {
+    text-align: center;
+    font-size: 11px;
+    color: #c5a059;
+    margin: -15px 0 25px;
+    opacity: 0.85;
+}
+
+.footer-disclaimer {
+    font-size: 11px;
+    opacity: 0.75;
+    margin-top: 6px;
 }
 
 /* ===== PRICE BOX ===== */
@@ -239,6 +330,28 @@ button:active {
     border-top: 1px solid #d4af37;
     margin: 25px 0;
     opacity: 0.3;
+}
+
+/* ===== BOOKING SECTION ===== */
+.booking {
+    margin: 60px 0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #c5a059;
+    font-size: 13px;
+    margin: -20px 0 30px;
+}
+
+.booking-card {
+    background-color: #1f2833;
+    border: 1px solid #d4af37;
+    border-top: 4px solid #c5a059;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
 }
 
 /* ===== SERVICES SECTION ===== */
@@ -396,6 +509,10 @@ button:active {
 
     .estimator-card h1 {
         font-size: 24px;
+    }
+
+    .contact-bar {
+        flex-direction: column;
     }
 
     .services-grid {
