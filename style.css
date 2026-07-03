@@ -33,10 +33,29 @@ body {
 }
 
 .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 16px;
     font-weight: 700;
     color: #d4af37;
     letter-spacing: 0.1em;
+}
+
+.nav-logo-img {
+    height: 34px;
+    width: auto;
+    display: block;
+}
+
+.nav-logo-sub {
+    font-family: 'Orbitron', 'Rajdhani', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #d4af37;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .nav-links {
@@ -496,6 +515,14 @@ button:active {
         font-size: 11px;
     }
 
+    .nav-logo-img {
+        height: 28px;
+    }
+
+    .nav-logo-sub {
+        font-size: 11px;
+    }
+
     .twitch-badge {
         top: 70px;
         right: 10px;
@@ -526,8 +553,13 @@ button:active {
 }
 
 @media (max-width: 480px) {
-    .nav-logo {
-        font-size: 14px;
+    .nav-logo-img {
+        height: 24px;
+    }
+
+    .nav-logo-sub {
+        font-size: 9px;
+        letter-spacing: 0.1em;
     }
 
     .nav-links {
