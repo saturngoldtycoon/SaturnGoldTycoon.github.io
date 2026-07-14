@@ -15,4 +15,232 @@
   .live-hero iframe{width:100%;display:block;border:0;aspect-ratio:16/9;height:auto;}
   .stream-info{padding:22px;}
   .stream-info h1{font-size:26px;margin-bottom:8px;}
-  .stream-info .tagline{color:var(--ink-soft);font-size:15
+  .stream-info .tagline{color:var(--ink-soft);font-size:15px;margin-bottom:18px;}
+  .stream-actions{display:flex;gap:12px;flex-wrap:wrap;}
+
+  .schedule-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .schedule-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;}
+  .schedule-card .day{font-family:'Orbitron';font-weight:800;font-size:14px;margin-bottom:6px;}
+  .schedule-card .time{font-family:'IBM Plex Mono';font-size:12.5px;color:var(--gold);margin-bottom:6px;}
+  .schedule-card .game{font-size:12.5px;color:var(--ink-soft);}
+
+  .game-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;}
+  .game-card h3{font-size:19px;margin-bottom:4px;}
+  .game-card .game-role{color:var(--purple);font-family:'IBM Plex Mono';font-size:12px;margin-bottom:16px;}
+  .game-card p{color:var(--ink-soft);font-size:14px;margin-bottom:14px;}
+  .game-card ul{padding-left:0;}
+  .game-card li{color:var(--ink-soft);font-size:13.5px;margin-bottom:8px;padding-left:18px;position:relative;}
+  .game-card li::before{content:'✦';position:absolute;left:0;color:var(--gold);font-size:11px;}
+
+  .clips-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:18px;}
+  .clip-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+  .clip-placeholder{aspect-ratio:16/9;background:linear-gradient(135deg, rgba(139,108,242,.25), rgba(212,175,55,.15));display:flex;align-items:center;justify-content:center;color:var(--ink-soft);font-size:13px;}
+  .clip-card h4{font-size:14px;font-family:'Inter';font-weight:700;padding:14px 16px 2px;}
+  .clip-date{font-size:12px;color:var(--ink-soft);padding:0 16px 16px;}
+  .clips-footer{text-align:center;}
+  .clips-footer a{color:var(--gold);font-weight:700;font-size:13.5px;}
+
+  .community-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .community-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;text-align:center;}
+  .community-card h3{font-size:15px;font-family:'Inter';font-weight:700;margin-bottom:8px;}
+  .community-card p{color:var(--ink-soft);font-size:12.5px;margin-bottom:14px;}
+
+  .cta-box{background:linear-gradient(135deg, rgba(139,108,242,.15), rgba(212,175,55,.1));border:1px solid var(--line);border-radius:var(--radius);padding:40px;text-align:center;}
+  .cta-box h2{font-size:24px;margin-bottom:10px;}
+  .cta-box p{color:var(--ink-soft);max-width:52ch;margin:0 auto 22px;}
+
+  @media(max-width:900px){
+    .schedule-grid{grid-template-columns:1fr 1fr;}
+    .clips-grid{grid-template-columns:1fr;}
+    .community-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="cosmos"></div>
+
+<header>
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <div class="ring"></div>
+      <div class="brand-text">SATURN GOLD TYCOON<span class="sub">Creative Universe</span></div>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ecosystem.html">Ecosystem</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="twitch.html" class="active">Watch</a>
+      <a href="merch.html">Merch</a>
+    </nav>
+    <a href="https://twitch.tv/saturngoldtycoon" class="btn btn-purple"><span class="live-dot"></span>Watch on Twitch</a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap" style="padding-top:36px;">
+    <div class="live-hero">
+      <span class="live-badge">🔴 LIVE</span>
+      <iframe
+        src="https://player.twitch.tv/?channel=saturngoldtycoon&parent=saturngoldtycoon.com"
+        height="720"
+        width="100%"
+        allowfullscreen>
+      </iframe>
+      <div class="stream-info">
+        <h1>SGT Gaming Live</h1>
+        <p class="tagline">Dead by Daylight. Strategy. Survival. Enter Orbit.</p>
+        <div class="stream-actions">
+          <a href="https://twitch.tv/saturngoldtycoon" target="_blank" class="btn btn-purple">Follow on Twitch</a>
+          <a href="tech-hub/index.html" class="btn btn-ghost">Need Computer Repair?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <div class="section-head left">
+      <span class="eyebrow">Schedule</span>
+      <h2>Stream Schedule</h2>
+    </div>
+    <div class="schedule-grid">
+      <div class="schedule-card"><div class="day">Tuesday</div><div class="time">7:00 PM EST</div><div class="game">Dead by Daylight</div></div>
+      <div class="schedule-card"><div class="day">Thursday</div><div class="time">7:00 PM EST</div><div class="game">Dead by Daylight</div></div>
+      <div class="schedule-card"><div class="day">Saturday</div><div class="time">6:00 PM EST</div><div class="game">Special Events / Community</div></div>
+      <div class="schedule-card"><div class="day">Sunday</div><div class="time">8:00 PM EST</div><div class="game">Dead by Daylight / Variety</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head left">
+      <span class="eyebrow">Featured Game</span>
+      <h2>Dead by Daylight</h2>
+    </div>
+    <div class="game-card">
+      <h3>Dead by Daylight</h3>
+      <p class="game-role">Killer Main / Tips &amp; Tricks</p>
+      <p>Asymmetrical horror at its finest. Master the Killer role, learn strategy, and dominate the Entity's trials. Tune in for advanced gameplay, builds, and community challenges.</p>
+      <ul>
+        <li>Advanced killer builds &amp; counters</li>
+        <li>Map strategy &amp; survivor mind games</li>
+        <li>Live viewer predictions &amp; challenges</li>
+        <li>Community tournament prep</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="clips">
+  <div class="wrap">
+    <div class="section-head left">
+      <span class="eyebrow">Highlights</span>
+      <h2>Recent Highlights</h2>
+    </div>
+    <div class="clips-grid">
+      <div class="clip-card">
+        <div class="clip-placeholder">Clip Coming Soon</div>
+        <h4>Killer Highlight #1</h4>
+        <div class="clip-date">Latest Broadcast</div>
+      </div>
+      <div class="clip-card">
+        <div class="clip-placeholder">Clip Coming Soon</div>
+        <h4>Killer Highlight #2</h4>
+        <div class="clip-date">Latest Broadcast</div>
+      </div>
+      <div class="clip-card">
+        <div class="clip-placeholder">Clip Coming Soon</div>
+        <h4>Community Moment</h4>
+        <div class="clip-date">Latest Broadcast</div>
+      </div>
+    </div>
+    <div class="clips-footer">
+      <a href="https://twitch.tv/saturngoldtycoon/clips" target="_blank">View All Clips on Twitch →</a>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="wrap">
+    <div class="section-head left">
+      <span class="eyebrow">Community</span>
+      <h2>Join the Community</h2>
+    </div>
+    <div class="community-grid">
+      <div class="community-card">
+        <h3>💬 Discord</h3>
+        <p>Real-time chat, community events, and strategy discussions.</p>
+        <a href="#" class="btn btn-ghost">Join Discord</a>
+      </div>
+      <div class="community-card">
+        <h3>🐦 Twitter/X</h3>
+        <p>Schedule updates, clips, and hot takes on the meta.</p>
+        <a href="https://twitter.com/saturngoldtycoon" target="_blank" class="btn btn-ghost">Follow</a>
+      </div>
+      <div class="community-card">
+        <h3>📺 YouTube</h3>
+        <p>Full VODs, highlight compilations, and strategy guides.</p>
+        <a href="https://youtube.com/@saturngoldtycoon" target="_blank" class="btn btn-ghost">Subscribe</a>
+      </div>
+      <div class="community-card">
+        <h3>📸 Instagram</h3>
+        <p>Behind-the-scenes, memes, and community highlights.</p>
+        <a href="https://instagram.com/saturngoldtycoon" target="_blank" class="btn btn-ghost">Follow</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Grind Without Worry</h2>
+      <p>Your PC crashes mid-stream? We fix it. OS recovery. Data rescue. Fast turnaround. So you can get back to dominating.</p>
+      <a href="tech-hub/index.html" class="btn btn-gold">Get SGT-Tech Repairs</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px;"><div class="ring"></div><div class="brand-text">SATURN GOLD TYCOON</div></div>
+        <p>A creative universe built on deep space, gold, and purple — streaming, storytelling, and a few side ventures.</p>
+      </div>
+      <div>
+        <h5>Watch</h5>
+        <ul>
+          <li><a href="https://twitch.tv/saturngoldtycoon">Twitch</a></li>
+          <li><a href="https://youtube.com/@saturngoldtycoon">YouTube</a></li>
+          <li><a href="https://tiktok.com/@saturngoldtycoon">TikTok</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="ecosystem.html">Ecosystem</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Ventures</h5>
+        <ul>
+          <li><a href="tech-hub/index.html">SGT Tech-Hub</a></li>
+          <li><a href="merch.html">Merch Store</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Saturn Gold Tycoon Ecosystem. All systems nominal.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
