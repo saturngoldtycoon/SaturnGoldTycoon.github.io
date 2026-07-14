@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Now | S.G.T. Tech-Hub</title>
+<meta name="description" content="Book a computer repair appointment with SGT Tech-Hub — mobile service across Cleveland & Northeast Ohio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;800;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="wrap">
+    <span>Serving Cleveland &amp; Northeast Ohio · 50-mile mobile radius</span>
+    <span><strong>Diagnostic fee credited</strong> when you book the repair</span>
+  </div>
+</div>
+
+<header>
+  <div class="wrap header-row">
+    <a href="index.html" class="brand">
+      <div class="brand-mark">SGT</div>
+      <div class="brand-text">Tech-Hub</div>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services &amp; Pricing</a>
+      <a href="book.html" class="active">Book Now</a>
+    </nav>
+    <div class="header-actions">
+      <div class="call-chip">
+        <small>Call or text</small>
+        <strong>732-SGT-TECH</strong>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Book Now</span>
+    <h1>Book your visit</h1>
+    <p>Fill this out and I'll confirm your appointment by text or email — usually within a few hours. Prefer to talk it through? Call or text 732-SGT-TECH directly.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="book-panel">
+      <div>
+        <h3>What to expect</h3>
+        <p>A real person confirms your slot, you get a price before the visit, and most repairs wrap same-day.</p>
+        <div class="info-line"><b>📞</b><span>732-SGT-TECH (call or text)</span></div>
+        <div class="info-line"><b>📍</b><span>Cleveland &amp; Northeast Ohio, 50-mile radius, in-person only</span></div>
+        <div class="info-line"><b>🎖️</b><span>Senior &amp; veteran discounts available with valid ID</span></div>
+        <div class="info-line"><b>💳</b><span>Flat rates + $25 travel fee — see the <a href="services.html" style="color:var(--gold-deep);font-weight:700;">full price list</a></span></div>
+      </div>
+      <div>
+        <form class="book-form" id="bookForm">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required>
+          <label for="contact">Phone or email</label>
+          <input id="contact" type="text" placeholder="Best way to reach you" required>
+          <label for="serviceSelect">Service needed</label>
+          <select id="serviceSelect" required>
+            <option value="">Choose a service…</option>
+            <option>Diagnostic Only</option>
+            <option>Won't Turn On</option>
+            <option>Running Slow</option>
+            <option>Error / Blue Screen</option>
+            <option>Virus / Malware</option>
+            <option>Data Recovery</option>
+            <option>Network Support</option>
+            <option>Tech Lesson</option>
+          </select>
+          <label for="notes">Anything else?</label>
+          <textarea id="notes" rows="3" placeholder="Describe the issue (optional)"></textarea>
+          <button class="btn btn-gold btn-block" type="submit">Request This Appointment</button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="glyph">✅</div>
+          <h4>Request received</h4>
+          <p>Thanks — I'll text or email you to confirm a time, usually within a few hours. For anything urgent, call or text <a href="tel:+17327488324" style="color:var(--gold-deep);font-weight:700;">732-SGT-TECH</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px;"><div class="brand-mark">SGT</div><div class="brand-text">Tech-Hub</div></div>
+        <p>Mobile computer repair, virus removal, and data recovery for Cleveland &amp; Northeast Ohio. Real prices, real humans, real results.</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+17327488324">732-SGT-TECH</a></li>
+          <li>Cleveland &amp; NE Ohio · 50mi radius</li>
+          <li><a href="services.html">Full pricing list</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Shop</h5>
+        <ul>
+          <li><a href="../merch.html">SGT Merch Store →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 S.G.T. Tech-Hub. All systems nominal.</span>
+      <span>Senior &amp; veteran discounts available with valid ID/verification.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
